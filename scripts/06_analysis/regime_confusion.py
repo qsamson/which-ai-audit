@@ -1,7 +1,7 @@
 """Run from the repository root: python scripts/06_analysis/regime_confusion.py
 Regime confusion: which interaction regimes underlie studies that draw general conclusions about AI."""
 import pandas as pd
-d = pd.read_pickle('data/coding/coded_final.pkl'); X = pd.read_csv('data/coding/x6_three_judgments.csv').set_index('ft_id')
+d = pd.read_csv('data/coding/coding_final.csv', keep_default_na=False); X = pd.read_csv('data/coding/x6_three_judgments.csv').set_index('ft_id')
 t = d[(d.ft_decision == 'include') & (d.study_type != 'T3')].copy()
 t['general_claim'] = t.ft_id.map(X.general_claim); t['X6'] = t.ft_id.map(X.X6)
 AG = ['Tool-using agent', 'Autonomous/multi-agent']

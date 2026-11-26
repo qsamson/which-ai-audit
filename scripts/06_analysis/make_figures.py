@@ -6,7 +6,7 @@ from statsmodels.stats.proportion import proportion_confint
 BLUE, ORANGE, INK, INK2, GRID, SURF = '#257de0', '#f47230', '#191919', '#666666', '#e6e6e6', '#ffffff'
 plt.rcParams.update({'font.family': 'DejaVu Sans', 'font.size': 10, 'text.color': INK, 'axes.edgecolor': GRID, 'axes.labelcolor': INK2,
                      'xtick.color': INK2, 'ytick.color': INK, 'axes.spines.top': False, 'axes.spines.right': False, 'figure.facecolor': SURF})
-d = pd.read_pickle('data/coding/coded_final.pkl'); X = pd.read_csv('data/coding/x6_three_judgments.csv').set_index('ft_id')
+d = pd.read_csv('data/coding/coding_final.csv', keep_default_na=False); X = pd.read_csv('data/coding/x6_three_judgments.csv').set_index('ft_id')
 inc = d[d.ft_decision == 'include']; t12 = inc[inc.study_type != 'T3'].copy(); t12['GC'] = t12.ft_id.map(X.general_claim)
 def save(fig, name):
     for ext in ('png', 'svg'): fig.savefig(f'figures/{name}.{ext}', dpi=200, bbox_inches='tight')

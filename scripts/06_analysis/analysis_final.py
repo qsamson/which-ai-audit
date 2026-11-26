@@ -6,7 +6,7 @@ from statsmodels.stats.proportion import proportion_confint
 from statsmodels.stats.multitest import multipletests
 import statsmodels.formula.api as smf
 rng = np.random.default_rng(2027)
-d = pd.read_pickle('data/coding/coded_final.pkl'); X = pd.read_csv('data/coding/x6_three_judgments.csv').set_index('ft_id')
+d = pd.read_csv('data/coding/coding_final.csv', keep_default_na=False); X = pd.read_csv('data/coding/x6_three_judgments.csv').set_index('ft_id')
 F = pd.read_csv('data/screening/fulltext_list.csv').set_index('ft_id')
 J = pd.read_csv('data/screening/by_journal.csv').set_index('Journal')
 inc = d[d.ft_decision == 'include'].copy().drop(columns=['journal','field','year','title','doi'],errors='ignore'); inc['journal'] = inc.ft_id.map(F.journal); inc['field'] = inc.journal.map(J.Field)

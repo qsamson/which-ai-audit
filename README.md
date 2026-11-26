@@ -59,7 +59,7 @@ python scripts/06_analysis/regime_confusion.py    # regime breakdown behind the 
 python scripts/06_analysis/make_figures.py        # all figures
 ```
 
-Both scripts read only files in `data/` and need no PDFs.
+These scripts read only CSV files in `data/` and need no PDFs. Scripts in folders 01–05 document how the data were produced. They are kept for transparency and need the full texts to rerun.
 
 ## Repository structure
 

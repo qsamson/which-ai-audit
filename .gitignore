@@ -7,3 +7,4 @@ ft_txt/
 __pycache__/
 .ipynb_checkpoints/
 results/which_ai_results_reproduced.xlsx
+*.pkl
