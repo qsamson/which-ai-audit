@@ -1,0 +1,9 @@
+# Copyrighted full texts are never committed
+fulltexts/
+ft_txt/
+*.pdf
+.env
+*.key
+__pycache__/
+.ipynb_checkpoints/
+results/which_ai_results_reproduced.xlsx

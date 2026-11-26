@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use these data or code, please cite them as below."
+title: "Which AI? Regime Confusion and Reporting Gaps in Research on Generative AI in Society: data, code and codebook"
+type: dataset
+authors:
+  - family-names: Quaye
+    given-names: Samson
+    affiliation: "Center for Cybersecurity and Forensic Education (C2SAFE), Illinois Institute of Technology"
+  - family-names: Nobles
+    given-names: Calvin
+    affiliation: "University of Maryland Global Campus"
+  - family-names: Khan
+    given-names: Abdul Hadi
+    affiliation: "School of Computer Information Sciences, University of the Cumberlands"
+  - family-names: Ben Ayed
+    given-names: Ahmed
+    affiliation: "School of Engineering & Technology, National University"
+date-released: 2026-11-26
+license: MIT
+keywords: [generative AI, regime confusion, agentic AI, reporting standards, meta-research, reproducibility]
