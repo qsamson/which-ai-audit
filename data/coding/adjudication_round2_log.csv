@@ -1,0 +1,20 @@
+ft_id,item,old,new,reason,quote
+FT065,inclusion,E3,include T1,The teacher inspected the timeline containing GPT-4-derived information. Its utility was part of the evaluation.,
+FT264,inclusion,E1,include T2,The paper interprets and reproduces existing generated artworks. This meets T2.,
+FT215,inclusion,E6,include T3,Two participants described actual attempts at qualitative analysis. This meets T3 alongside the prospective questions.,
+FT247,inclusion,E6,include T3,Table 2 records actual tasks undertaken by six clinicians. This meets T3.,
+FT039,B1,N,P,The deployed chatbot is named. The underlying conversational LLM and its version are unspecified.,Neuro-sama (hereinafter Neuro) is a chatbot
+FT115,B1,N,P,Products used in class are named. ChatGPT-4o appears in the authors’ writing disclosure.,"instructors utilised ChatGPT, Nearpod, Perplexity, Diffit, Mizou"
+FT121,B1,P,N,The questionnaire supplies examples. It does not establish which product respondents actually used.,"AI chatbot (e.g., ChatGPT, Claude, Gemini) in everyday life"
+FT159,B1,R,R,"The authors date their analyses to November 2024–February 2025. That is the analysis period, distinct from the earlier encounter dates.",3104 encounters’ notes using LLaMA-3.3-70B
+FT240,B1,P,N,The provider and access mode are reported. No generator model or product name is given.,HTTP request to the OpenAI API
+FT301,B1,P,R,The authors date testing to April 2024 and launch to April 29. Figure 2 identifies both GPT-4 Turbo and GPT-4 use.,utilized the OpenAI GPT-4 Turbo API
+FT002,X1,Answering,Answering,The researchers prompt existing image generators. Comparing several generators does not make the procedure multi-agent.,generate only creative outputs
+FT039,X1,Unclear,Tool-using agent,The performer can trigger an external device. The paper leaves intentional control ambiguous. Separate speech and gameplay components alone do not establish multi-agent coordination.,it activated a shock collar attached to Vedal
+FT051,X1,Answering,Answering,GPT-4o supplies writing suggestions on demand. The outline and similarity display are interface features; the paper does not establish model-directed tool use or retrieval.,provide more accurate suggestions
+FT058,X1,Answering,Grounded/RAG,"The context-enhanced conditions supply lesson objectives, narratives and feedback. The zero-shot comparator is Answering.",Constructed dynamically based on the row data
+FT161,X1,Answering,Customized assistant,A reusable clinician-authored instruction configures GPT-5-Chat as a safety monitor. Each conversation is the item to classify.,"To create ASTRA, we first wrote a curated prompt"
+FT186,X1,Answering,Customized assistant,Task-specific weight training defines the principal summarizer; the article also compares it with ChatGPT.,we fine-tune the BART model in two primary ways
+FT211,X1,Grounded/RAG,Autonomous/multi-agent,Teacher and peer agents interact with the learner and one another. The system also retrieves lecture material.,This dual-agent design
+FT238,X1,Answering,Grounded/RAG,ThemeViz supplies the source corpus on each generation. Grounding here is direct context inclusion.,every prompt sent to the model includes the original dataset
+FT284,X1,Answering,Customized assistant,The controlled comparison tests customized diffusion checkpoints against base models. Other LLMs assist the authors’ analysis.,most of the selected checkpoints (aside from Pony Diffusion) are derivatives of these models
