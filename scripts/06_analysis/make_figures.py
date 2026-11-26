@@ -17,31 +17,8 @@ def bars(ax, labels, vals, color, fmt):
     ax.set_yticks(y, labels); ax.tick_params(axis='y', length=0); ax.spines['left'].set_visible(False)
     ax.xaxis.grid(True, color=GRID, linewidth=0.8); ax.set_axisbelow(True)
     for yi, v in zip(y, vals): ax.text(v + max(vals) * 0.015, yi, fmt(v), va='center', color=INK, fontsize=9)
-# 1 PRISMA
-P = pd.read_csv('data/screening/prisma_final.csv'); P['k'] = P.iloc[:, 0].str.strip()
-split = P.index[P.k == 'Full texts sought'][0]
-n = dict(zip(P.k[:split], P.n[:split])); nf = dict(zip(P.k[split:], P.n[split:])); n.update({k: v for k, v in nf.items() if k not in n})
-fig, ax = plt.subplots(figsize=(9, 7.6)); ax.set_xlim(0, 10); ax.set_ylim(2.5, 11); ax.axis('off')
-def box(x, y, w, h, txt, bold=False, fc='#f3f7fd', ec=BLUE):
-    ax.add_patch(FancyBboxPatch((x, y), w, h, boxstyle='round,pad=0.02,rounding_size=0.12', fc=fc, ec=ec, lw=1.2))
-    ax.text(x + w / 2, y + h / 2, txt, ha='center', va='center', fontsize=9.5, fontweight='bold' if bold else 'normal', color=INK, linespacing=1.4)
-def arrow(x1, y1, x2, y2): ax.annotate('', (x2, y2), (x1, y1), arrowprops=dict(arrowstyle='-|>', color=INK2, lw=1.1))
-L, W, R, RW = 0.3, 4.6, 5.6, 4.1
-box(L, 9.8, W, 0.9, f"Records identified via OpenAlex\n15 journals, 2023–2026  (n = {n['Records identified (OpenAlex, 15 journals, 2023–2026)']:,})", True)
-box(R, 9.8, RW, 0.9, f"Duplicates removed (n = {n['Duplicates removed']})", fc='#fafafa', ec=GRID)
-box(R, 8.45, RW, 1.0, f"Not screened: stopping rule reached\n(20 includes per journal, fixed\nrandom order)  (n = {n['Not screened (fixed random order; stopping rule of 20 includes per journal)']:,})", fc='#fafafa', ec=GRID)
-box(L, 8.5, W, 0.9, f"Records screened (title/abstract)\n(n = {n['Records screened (title/abstract)']})")
-box(R, 6.75, RW, 1.45, f"Excluded (n = {n['Excluded at title/abstract']})\nE1 not empirical {n['E1 not empirical']} · E2 not GenAI {n['E2 not generative AI']}\nE3 research tool only {n['E3 GenAI only as research tool']} · E6 no AI output {n['E6 no real AI output']}\nRetracted {n['Retracted']}", fc='#fafafa', ec=GRID)
-box(L, 7.0, W, 0.9, f"Full texts sought (n = {n['Full texts sought']})")
-box(R, 5.5, RW, 0.9, f"Not retrieved, E4 (n = {n['Not retrieved (E4, full text inaccessible)']})", fc='#fafafa', ec=GRID)
-box(L, 5.5, W, 0.9, f"Full texts assessed (n = {n['Full texts assessed']})")
-box(R, 3.75, RW, 1.3, f"Excluded at full text (n = {nf['Excluded at full text']})\nE2 not GenAI {nf['E2 not generative AI']} · E6 no AI output {nf['E6 no real AI output']}\nE1 not empirical {nf['E1 not empirical']}", fc='#fafafa', ec=GRID)
-box(L, 3.2, W, 1.5, f"Studies included (n = {n['Included']})\nT1 researcher-controlled AI use {n['T1 researcher-controlled AI use']}\nT2 analysis of existing AI outputs {n['T2 analysis of existing AI outputs']}\nT3 participant-reported use {n['T3 participant-reported use']}", True, fc='#e3eefb')
-for y1, y2 in [(9.8, 9.4), (8.5, 7.9), (7.0, 6.4), (5.5, 4.7)]: arrow(L + W / 2, y1, L + W / 2, y2)
-for yy, ty in [(10.25, 10.25), (8.95, 8.95), (8.95, 7.47), (7.45, 5.95), (5.95, 4.4)]:
-    ax.plot([L + W / 2, L + W / 2], [yy, yy], alpha=0); arrow(L + W, yy if yy == ty else yy, R, ty)
-ax.text(0.3, 2.75, 'Screening followed a fixed random order per journal and stopped at 20 inclusions; records past that point were not screened.', fontsize=8, color=INK2)
-save(fig, 'fig1_prisma')
+# 1 PRISMA: drawn by its own script
+import runpy; runpy.run_path('scripts/06_analysis/prisma_figure.py')
 # 2 regime confusion
 order = ['Answering', 'Customized assistant', 'Grounded/RAG', 'Tool-using agent', 'Autonomous/multi-agent', 'Unclear']
 a = t12.X1.value_counts().reindex(order, fill_value=0); g = t12[t12.GC == 'Y'].X1.value_counts().reindex(order, fill_value=0)
