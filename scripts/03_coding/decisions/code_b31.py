@@ -1,0 +1,17 @@
+D = {
+'FT285': dict(type='T1', ov={'A1': ('R', 'In the creation of the triggering statements, we built on already existing survey items that measure homophobia'), 'A2': 'N', 'B1': 'P', 'B2': 'N', 'B4': 'N', 'B5': 'N', 'C1': ('P', '@'), 'D1': 'NA', 'F1': ('R', '@')},
+              X1='Answering', X6='yes', note='Chatbot responses to homophobic statements across cultures; data on figshare.'),
+'FT286': dict(type='T3', ov={'A1': ('R', 'Data were collected through six FGDs conducted in Singapore, involving a total of 36 participants'), 'B1': ('P', 'ChatGPT, Gemini, or Claude)?”.'), 'D1': 'N'},
+              X1='Answering', X6='yes', note='Focus groups on folk theories of GenAI.'),
+'FT287': dict(type='T1', ov={'A1': ('R', 'We selected ChatGPT 3.5 because it is free, well-known, and accessible without requiring that users create an account.'), 'A2': 'N',
+              'B1': ('P', 'We selected ChatGPT 3.5 because it is free, well-known, and accessible without requiring that users create an account.'), 'B2': ('P', 'We selected ChatGPT 3.5 because it is free, well-known, and accessible without requiring that users create an account.'), 'B4': 'N', 'F1': ('P', '@')},
+              X1='Answering', X6='yes', R='none', note='Participants drafting public comments with ChatGPT 3.5.'),
+'FT288': dict(type='T1', ov={'A1': ('R', 'we seek to identify whether ChatGPT 3.5 can provide false information about LGBTQIA+ identiti'), 'A2': 'N', 'B1': ('P', 'we seek to identify whether ChatGPT 3.5 can provide false information about LGBTQIA+ identiti'), 'B2': 'N', 'C1': 'N', 'F1': 'N'},
+              X1='Answering', X6='yes', note='ChatGPT 3.5 vs Google search experiment and interviews.'),
+'FT289': dict(dec='E1', dec_q='This, we argue following Habermas (1984), is highly problematic.', note='Theoretical analysis; no conversations collected.'),
+'FT290': dict(type='T3', ov={'A1': ('R', 'One third of respondents reported using generative AI applications outside of work'), 'B1': ('P', '@')},
+              X1='Answering', X6='yes', note='Australian survey and focus groups.'),
+'FT291': dict(type='T1', ov={'A1': ('R', 'In our study, we developed a speciﬁc set of 20 questions, with 10 questions dedicated to each ﬁeld'), 'A2': 'N', 'B1': 'P', 'B3': ('P', '@'), 'C1': ('P', '@'), 'D1': 'NA', 'G1': 'N'},
+              X1='Answering', X6='no', note='Political bias of several LLMs; materials on GitHub.'),
+'FT292': dict(dec='E6', dec_q='We conducted qualitative, in-depth, semistructured interviews with participants who were deeply vested in and familiar with the po', note='Expert interviews on GenAI propaganda; no AI system examined.'),
+}

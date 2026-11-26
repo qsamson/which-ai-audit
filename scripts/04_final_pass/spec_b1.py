@@ -1,0 +1,21 @@
+# B1 re-check (final pass). Rule: R = every analysed model named with version AND a date/dated snapshot of this study's use.
+S = {
+'FT012':('R',[r"From May to June 2023, participants were recruited from Prolific", r"with an AI chatbot powered by GPT-4"],'Participants chatted live with GPT-4 chatbot in May-June 2023.'),
+'FT057':('R',[r"All three chatbots used the GPT.{1,3}4o snapshot gpt.{1,3}4o.{1,3}2024.{1,3}08.{1,3}06"],'Dated snapshot.'),
+'FT058':('R',[r"We used the GPT.{1,3}4o API to generate outputs", r"The model was queried in May 2024\."],''),
+'FT109':('R',[r"The Waai web app feeds student writing input into ChatGPT-4", r"to test the app over two semesters \(August 2023–May 2024\)"],'Live use during dated test period.'),
+'FT147':('R',[r"the instructor demonstrated ChatGPT3\.5 in all courses", r"Task duration: 4 weeks \(between May and June 2023\)", r"participants’ variation in model use \(ChatGPT 3\.5 vs\. 4\.0\)"],'Versions (3.5/4.0) and task dates stated.'),
+'FT156':('R',[r"From November 2024 to February 2025, free-tier ChatGPT users initially used GPT-4o model"],''),
+'FT159':('R',[r"we conducted final scoring on the remaining 3104 encounters’ notes using LLaMA-3\.3-70B", r"with analyses conducted in November 2024-February 2025"],'Open-weight versioned model; analysis window dated.'),
+'FT174':('R',[r"designed for Anthropic’s Claude 3\.5 Sonnet V2 model", r"Three training sessions were conducted between February and May 2025"],'Simulator used by participants in dated sessions.'),
+'FT175':('R',[r"each vignette was fed into ChatGPT-4 with the instruction to evaluate them|We then fed each vignette into ChatGPT-4", r"Data were generated between October and December 2023\."],'MentaLLaMA named as fine-tuned model.'),
+'FT202':('R',[r"We used the current version \(8\.08\.2024\) of the .{1,2}My GPT.{1,2} feature, part of the ChatGPT 4\.0 suite"],'Dated version.'),
+'FT214':('R',[r"implemented using OpenAI’s GPT-4o model2", r"Version GPT-4o-2024-05-13"],'Dated snapshot in footnote.'),
+'FT235':('R',[r"GPT-4o by OpenAI, Gemini 1\.5 by Google, or Claude 3", r"Data was collected between May 2024 and July 2024\."],'Live interaction during dated collection.'),
+'FT249':('R',[r"we designed a set of four prompts for the modules using gpt-3\.5-turb", r"The experiments have been run between June and August 2023\."],''),
+'FT277':('R',[r"two researchers collected data with ChatGPT 4 \(including DALL-E 3\)", r"Between April 4th and April 24th, 2024"],''),
+'FT279':('R',[r"All evaluations were conducted using ChatGPT \(GPT-4, Plus subscription\) via chat\.openai\.com between January and February 2025"],''),
+'FT293':('R',[r"I was using the following versions / models: ChatGPT: GPT 3\.5", r"between March 29 and April 14, 2023"],'Quote replaced (old quote was a reference).'),
+'FT129':('P',[r"enLabs Voice Library \(ElevenLabs, New York, USA\)"],'Was N; tool named, no version.'),
+'FT280':('P',[r"we recursively queried ChatGPT-4 to obtain the missing labels"],'Was N; versioned model named, no date of use.'),
+}

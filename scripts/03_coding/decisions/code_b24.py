@@ -1,0 +1,20 @@
+D = {
+'FT224': dict(type='T1', ov={'A1': ('R', '@'), 'A2': 'N', 'B1': ('R', 'Participant audio was streamed directly to OpenAI’s Realtime API using gpt-4o-realtime-preview-2025-06-03'), 'B4': 'N', 'B5': 'N', 'G1': 'P'},
+              X1='Customized assistant', X6='no', note='Voice AI speaking for nonhuman stakeholders; dated realtime snapshot.'),
+'FT225': dict(type='T1', ov={'A1': ('R', 'To operationalize the Speech2Pro approach and enable empirical evaluation, we developed a working system prototype'), 'A2': 'N', 'B1': 'P', 'B2': 'N', 'B3': 'N',
+              'B4': 'P', 'B5': 'N', 'C1': ('P', '@'), 'E1': 'N', 'E2': 'N', 'G1': 'N'},
+              X1='Answering', X6='no', note='Own speech-to-projection text-to-image pipeline.'),
+'FT226': dict(dec='E2', dec_q='Future work could integrate generative AI to enhance natural language understanding', note='Dialogflow bilingual CA; not generative.'),
+'FT227': dict(dec='E2', dec_q='The scenarios, provided in the supplementary material, began with a brief introduction to set the context', note='Scenario-based chatbot interactions; no generative model described. Flag for second coder.'),
+'FT230': dict(type='T1', ov={'A1': ('R', 'all follow-up questions were generated in real-time by GPT-4o, based directly on the responses provided by “Oz”'), 'A2': ('R', '@'),
+              'B1': ('P', 'all follow-up questions were generated in real-time by GPT-4o'), 'B2': 'N', 'B4': 'N', 'B5': 'N', 'C2': ('P', 'The “Wizard” was tasked with managing the GPT-4o workflow, which was pre-configured with a persona specializing in qualitative'), 'E1': ('R', '@'), 'F1': ('P', '@')},
+              X1='Customized assistant', X6='no', R='disclosed: ChatGPT (spelling)', R_q='We would also like to clarify that we used ChatGPT solely for spell-checking and grammar revisions to enhance content clarity.', note='GPT-4o follow-up questions with human review.'),
+'FT232': dict(type='T1', ov={'A1': ('R', 'we developed STI Shield as a solution tai­ lored for young African adults, combining an LLM and rule-based chatbots'), 'A2': 'N',
+              'B1': ('P', 'The generative chatbot in the Safe Talk module was built using OpenAI’s Assistants API (OpenAI, 2025) with GPT-4o as the backend model.'), 'B4': 'N', 'B5': 'N', 'F1': 'N'},
+              X1='Customized assistant', X6='no', note='GPT-4o Assistants API chatbot for STI education.'),
+'FT234': dict(dec='E2', dec_q='Roles that did not previously exist, such as the structuring of training sentences, review of API interface connections', note='Intent-based conversational agents designed by UX teams; not generative.'),
+'FT235': dict(type='T1', ov={'A1': ('R', 'For the conversational AI model, participants were assigned to one of three systems: GPT-4o by OpenAI, Gemini 1.5 by Google, or Claude 3.'), 'A2': 'N',
+              'B1': ('P', 'For the conversational AI model, participants were assigned to one of three systems: GPT-4o by OpenAI, Gemini 1.5 by Google, or Claude 3.'), 'B2': ('P', '@'), 'B4': 'N', 'D1': 'N'},
+              X1='Answering', X6='yes', note='Politeness with three chatbots vs humans.'),
+}
+D['FT224']['ov']['A1'] = ('R', 'Participant audio was streamed directly to OpenAI’s Realtime API using gpt-4o-realtime-preview-2025-06-03')
