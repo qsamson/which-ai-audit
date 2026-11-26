@@ -1,0 +1,22 @@
+PRISMA step,n
+"Records identified (OpenAlex, 15 journals, 2023–2026)",2154
+Duplicates removed,2
+Not screened (fixed random order; stopping rule of 20 includes per journal),1584
+Records screened (title/abstract),568
+Excluded at title/abstract,260
+   E1 not empirical,103
+   E2 not generative AI,87
+   E3 GenAI only as research tool,35
+   E6 no real AI output,34
+   Retracted,1
+Full texts sought,308
+"Not retrieved (E4, full text inaccessible)",55
+Full texts assessed,253
+Excluded at full text,29
+   E2 not generative AI,17
+   E6 no real AI output,10
+   E1 not empirical,2
+Included,224
+   T1 researcher-controlled AI use,142
+   T2 analysis of existing AI outputs,19
+   T3 participant-reported use,63
