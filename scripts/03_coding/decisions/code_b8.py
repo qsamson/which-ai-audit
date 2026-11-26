@@ -1,0 +1,22 @@
+D = {
+'FT057': dict(type='T1', ov={'A1': ('R', 'comparing the effectiveness of three GenAI agents: ChatGPT, SRLbot and Emotio'), 'A2': 'N', 'B1': ('P', 'The agent was implemented using OpenAI\'s ‘assistant’ API'),
+              'B2': ('R', 'The agent was implemented using OpenAI\'s ‘assistant’ API'), 'B4': 'N', 'B5': 'N', 'C1': 'N', 'C2': ('R', '@'), 'E1': 'N', 'E2': 'N'},
+              X1='Customized assistant', X6='yes', note='RCT of 3 agents via OpenAI Assistants API, temperature 0.7, March–May 2025; base model not named.'),
+'FT058': dict(type='T1', ov={'A1': ('R', 'We used the GPT-­4o API to generate outputs'), 'A2': ('R', 'By manually verifying each generated warmup task, we confirmed that all outputs were aligned with the curriculum and free of fabricated content.'),
+              'B1': ('P', 'We used the GPT-­4o API to generate outputs'), 'B4': ('R', 'Note that the default, zero-­shot model was not fine-­tuned'), 'B5': 'N', 'C2': 'N', 'D1': 'NA'},
+              X1='Answering', X6='no', note='GPT-4o API curriculum scaffolding; manual verification and minimal post-processing reported.'),
+'FT059': dict(type='T1', ov={'A1': ('R', 'We used Khan Academy math problem content aligned with the educational curricula of four countries'), 'A2': 'N',
+              'B1': ('P', 'we used the gpt-­3.5-­turbo model of GPT-­3.5, which can be fine-­tuned through the OpenAI API'), 'B4': ('R', 'we fine-­tuned LLMs using a few sets of labelled problems per skill'), 'B5': 'N', 'C2': 'N', 'D1': 'NA', 'E1': 'N'},
+              X1='Answering', X6='yes', note='gpt-3.5-turbo and Llama2-13B fine-tuned; temperature 0.2; prompts given.'),
+'FT060': dict(type='T1', ov={'A1': ('R', 'we used GPT-­4o in an offline stage to generate the full worked examples'), 'A2': 'N', 'B1': ('P', 'we used GPT-­4o in an offline stage to generate the full worked examples'), 'B4': 'N', 'B5': 'N', 'C2': 'N'},
+              X1='Answering', X6='yes', note='GPT-4o for worked examples and chat agent; fine-tuned BERT classifiers.'),
+'FT061': dict(type='T2', ov={'A1': ('R', 'Prior to course activities, students were supported with a ChatGPT guide and video demos.'), 'A2': 'N', 'B1': ('P', 'Prior to course activities, students were supported with a ChatGPT guide and video demos.'), 'C1': 'N', 'D1': 'N'},
+              X1='Answering', X6='no', note='Text mining of students\' ChatGPT interactions.'),
+'FT062': dict(type='T1', ov={'A1': ('R', '@'), 'A2': 'N', 'B1': ('P', 'To ensure ecological validity, the ChatGPT environment was neither fine-­tuned nor artificially modified'),
+              'B2': ('R', 'To ensure ecological validity, the ChatGPT environment was neither fine-­tuned nor artificially modified'), 'B4': ('R', 'To ensure ecological validity, the ChatGPT environment was neither fine-­tuned nor artificially modified'), 'B5': 'N', 'C1': 'N'},
+              X1='Answering', X6='yes', note='Lab study with standard ChatGPT; version not given.'),
+'FT063': dict(type='T1', ov={'A1': ('R', 'Mia, a friendly yellow cartoon character powered by GPT-­ 4, interacts with children through story-­related questions'),
+              'B1': ('P', 'Mia, a friendly yellow cartoon character powered by GPT-­ 4'), 'B4': 'N', 'C1': 'N', 'D1': ('R', 'Prompts are processed via the GPT API to ensure data security and prevent leakage')},
+              X1='Customized assistant', X6='yes', note='GPT-4 reading agent RCT with children.'),
+}
+D['FT062']['ov']['A1'] = ('R', 'To ensure ecological validity, the ChatGPT environment was neither fine-­tuned nor artificially modified')

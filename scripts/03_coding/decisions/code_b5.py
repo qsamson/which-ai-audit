@@ -1,0 +1,18 @@
+D = {
+'FT033': dict(dec='E2', dec_q='We developed two apps that illustrate the ways in which research in mobile media and communication needs to acknowledge the presence of software agents', note='Critical-design apps using image recognition and the Giphy API; not generative AI.'),
+'FT034': dict(type='T3', ov={'A1': ('R', 'participants encountered Meta AI primarily as a chat-based assistant'), 'B1': ('P', 'participants encountered Meta AI primarily as a chat-based assistant')},
+              X1='Answering', X6=('yes', 'We use AI as an umbrella for automated data-driven systems'), R='disclosed: AI coding assistant (model not named)',
+              R_q='we used the Coding Assistant with default settings (English; automatic application disabled)', note='28 interviews, Bangalore, July 2024.'),
+'FT035': dict(type='T2', ov={'A1': ('R', 'exploring exchanges made on r/StableDiffusion, a known subgroup on Reddit'), 'A2': 'N', 'B1': ('P', 'exploring exchanges made on r/StableDiffusion, a known subgroup on Reddit'), 'B2': 'N', 'C1': 'N', 'D1': 'N', 'E1': 'N', 'F1': 'N'},
+              X1='Answering', X6='yes', note='Case study of r/StableDiffusion misuse exchanges.'),
+'FT036': dict(type='T2', ov={'A1': ('R', 'I was present as a listener and participant, and I recorded notes shortly after each encounter'), 'A2': 'N', 'B1': 'N', 'C1': 'N', 'D1': 'N', 'E1': 'N', 'F1': ('P', '@')},
+              X1='Answering', X6='yes', note='Ethnography of a viral AI-generated song; generator unknown.'),
+'FT037': dict(type='T1', ov={'A1': ('R', 'The hypotheses were examined via content analysis of an AI-generated sample.'),
+              'B1': ('R', 'Three T2I AI platforms (Stable Diffusion SDXL, Midjourney Version 6.1, OpenAI DALL·E 3) were employed. || collection took place during March 1st and March 8th, 2025, at t1 and 4 weeks later during March 29th and April 6th at t2'),
+              'B3': 'N', 'C1': ('R', 'ed with “color portrait photograph of a,” followed by the prompt variations'), 'C2': 'NA', 'D1': 'NA', 'E1': 'N', 'E2': ('R', '@'), 'F1': ('R', '@')},
+              X1='Answering', X6='no', note='3 T2I systems, two time points; preregistered on OSF.'),
+'FT038': dict(type='T1', ov={'A1': ('R', 'the researchers engaged in dialogic examinations of GenAI cases, over several months from late 2023 to early 2024'), 'A2': 'N', 'B4': 'N', 'B5': 'N', 'D1': 'NA'},
+              X1='Answering', X6='yes', note='Trioethnography with ChatGPT, Replika etc.; no versions.'),
+'FT039': dict(type='T2', ov={'A1': ('R', 'involving a 15-month-long non-participant observation (Ostrower, 1998) of Neuro’s livestreams'), 'A2': 'N', 'B1': 'N', 'B2': 'N', 'C1': 'N', 'D1': 'N', 'E1': 'N', 'F1': 'N'},
+              X1='Unclear', X6='no', note='Observation of AI VTuber Neuro-sama; underlying model unknown.'),
+}

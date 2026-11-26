@@ -1,0 +1,18 @@
+D = {
+'FT137': dict(type='T3', ov={'A1': ('R', 'A total of 822 college students with prior experience in using ChatGPT'), 'B1': ('P', 'A total of 822 college students with prior experience in using ChatGPT'), 'D1': 'N'},
+              X1='Answering', X6='no', note='Survey of ChatGPT literacy and satisfaction.'),
+'FT138': dict(type='T3', ov={'A1': ('R', 'This behavior reflects a novel form of AI-mediated help-seeking'), 'B1': ('P', 'consumergrade systems such as ChatGPT or Gemini')},
+              X1='Answering', X6='yes', R='none', note='Preregistered survey, 584 adults.'),
+'FT139': dict(type='T3', ov={'A1': ('R', 'A total of 1500 Chinese participants were recruited via Credamo'), 'B1': 'N'},
+              X1='Answering', X6='yes', note='Social comparison with GAI; survey.'),
+'FT140': dict(type='T2', ov={'A1': ('R', 'were exposed to AI answers to two prompts, which were based on a generative AI tool’s actual answers to each prompt'), 'A2': 'N', 'B1': 'N', 'C1': ('P', '@'), 'E1': 'N', 'F1': 'N'},
+              X1='Answering', X6='yes', note='Experiment with real (adapted) GenAI answers; tool unnamed.'),
+'FT141': dict(type='T1', ov={'A1': ('R', 'We input ChatGPT to provide ratings on affective scales'), 'A2': 'N', 'B1': ('R', 'into ChatGPT-3.5 Mar 23 Version'), 'B2': 'N', 'B4': 'N', 'B5': 'N', 'C1': ('P', 'we entered the stories one by one without any specific requirements into ChatGPT-3.5 Mar 23 Version'), 'D1': 'NA'},
+              X1='Answering', X6=('no', 'Furthermore, this study exclusively focused on ChatGPT-3.5.'), note='ChatGPT vs human affective ratings.'),
+'FT142': dict(type='T1', ov={'A1': ('R', 'We conducted an IRB-exempt, pre-registered qualitative search using ChatGPT on April 7, 2023.'), 'A2': 'N', 'B1': ('P', 'We conducted an IRB-exempt, pre-registered qualitative search using ChatGPT on April 7, 2023.'), 'B5': 'N', 'D1': 'NA'},
+              X1='Answering', X6='no', note='ChatGPT answers on autism; date but no version.'),
+'FT143': dict(type='T3', ov={'A1': ('R', 'Participants (N = 305) in the United States were recruited via CloudResearch'), 'B1': 'N'},
+              X1='Answering', X6='yes', note='GenAI divide survey.'),
+'FT144': dict(type='T1', ov={'A1': ('R', 'This between-subjects experiment examined how prompt politeness affects user satisfaction with ChatGPT-4'), 'A2': 'N', 'B1': ('P', 'Participants interacted with GPT-4 via the ChatGPT interface.'), 'B4': 'N', 'G1': 'P'},
+              X1='Answering', X6='no', note='Polite vs direct prompts; default settings stated.'),
+}
